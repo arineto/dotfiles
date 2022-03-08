@@ -31,6 +31,10 @@ ZSH_THEME="robbyrussell"
 # Uncomment the following line to change how often to auto-update (in days).
 # zstyle ':omz:update' frequency 13
 
+zstyle ':completion:*' use-cache on
+autoload -Uz compinit && compinit
+source <(spin completion)
+
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
 
